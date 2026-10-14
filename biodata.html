@@ -1,0 +1,237 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata | Gracel Hizkia Winarso Putra</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+            padding: 30px;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            padding: 45px;
+            text-align: center;
+        }
+
+        .foto {
+            width: 110px;
+            height: 110px;
+            margin: auto;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            color: #2563eb;
+            font-weight: bold;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            margin-top: 20px;
+            font-size: 32px;
+        }
+
+        .header p {
+            margin-top: 8px;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .judul {
+            color: #1e3a8a;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        .biodata {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 22px;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .card p {
+            color: #0f172a;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .deskripsi {
+            margin-top: 20px;
+        }
+
+        .deskripsi p {
+            font-weight: normal;
+            line-height: 1.7;
+            color: #475569;
+        }
+
+        .hobi {
+            margin-top: 20px;
+        }
+
+        .daftar-hobi {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .hobi-item {
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f5f9;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            .biodata {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 25px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="foto">GH</div>
+
+            <h1>Gracel Hizkia Winarso Putra</h1>
+            <p>Mahasiswa Sistem Informasi</p>
+        </div>
+
+        <div class="content">
+
+            <h2 class="judul">Biodata Diri</h2>
+
+            <div class="biodata">
+
+                <div class="card">
+                    <h3>Nama Lengkap</h3>
+                    <p>Gracel Hizkia Winarso Putra</p>
+                </div>
+
+                <div class="card">
+                    <h3>NPM</h3>
+                    <p>29411002</p>
+                </div>
+
+                <div class="card">
+                    <h3>Program Studi</h3>
+                    <p>Sistem Informasi</p>
+                </div>
+
+                <div class="card">
+                    <h3>Status</h3>
+                    <p>Mahasiswa</p>
+                </div>
+
+            </div>
+
+            <div class="card deskripsi">
+                <h3>Deskripsi Singkat</h3>
+
+                <p>
+                    Saya adalah mahasiswa Sistem Informasi yang memiliki
+                    ketertarikan pada teknologi informasi, pengelolaan data,
+                    dan pengembangan sistem. Saya ingin mempelajari bagaimana
+                    teknologi dapat membantu menyelesaikan permasalahan,
+                    meningkatkan efisiensi kerja, serta mendukung proses bisnis.
+                    Saya juga terus mengembangkan kemampuan dalam pemrograman,
+                    basis data, dan analisis sistem informasi.
+                </p>
+            </div>
+
+            <div class="card hobi">
+                <h3>Hobi</h3>
+
+                <div class="daftar-hobi">
+                    <span class="hobi-item">✍️ Menulis</span>
+                    <span class="hobi-item">📷 Memotret</span>
+                    <span class="hobi-item">🎨 Menggambar</span>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            © 2026 Gracel Hizkia Winarso Putra
+        </footer>
+
+    </div>
+
+</body>
+</html>
+```
